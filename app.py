@@ -53,7 +53,7 @@ def login():
         user = cursor.fetchone()
 
         if user:
-            return render_template('hostel_search.html', username=username)
+            return render_template('signup.html', username=username)
         else:
             return "Login failed. Invalid credentials."
 
