@@ -38,10 +38,26 @@ def signup():
         cursor.execute("INSERT INTO users (username, password) VALUES (%s, %s)", (username, password))
         db.commit()
 
-        #return redirect(url_for('login'))
+        return redirect(url_for('login'))
 
     return render_template('signup.html')
 
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+
+        # Check user credentials
+        cursor.execute("SELECT * FROM users WHERE username = %s AND password = %s", (username, password))
+        user = cursor.fetchone()
+
+        if user:
+            return render_template('hostel_search.html', username=username)
+        else:
+            return "Login failed. Invalid credentials."
+
+    return render_template('login.html')
 
 
 if __name__ == '__main__':
