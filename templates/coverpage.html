@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='coverpageglobal.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='coverpage.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-4">
+      <div class="desktop-4-inner">
+        <div class="log-in-parent">
+          
+          <a href="{{ url_for('login') }}" class="btn">Log In</a>
+            <div class="log-in-button-child"></div>
+          
+          <a href="{{ url_for('signup') }}" class="btn">Sign Up</a>
+        </div>
+      </div>
+      <section class="frame-parent">
+        <div class="frame-wrapper">
+          <div class="city-connect-label-parent">
+            <div class="city-connect-label">
+              <div class="student-edition-label">
+                <h1 class="cityconnect">
+                  <span>C</span>
+                  <span class="ity">ity</span>
+                  <span>C</span>
+                  <span class="onnect">onnect.</span>
+                </h1>
+                <div class="sign-up-label">
+                  <h3 class="student-edition">Student Edition</h3>
+                </div>
+              </div>
+            </div>
+            <button class="rectangle-parent">
+              <div class="frame-child"></div>
+              <div class="explore-more">Explore More</div>
+            </button>
+          </div>
+        </div>
+        <div class="vector-node-parent">
+          <img
+            class="vector-node-icon"
+            loading="lazy"
+            alt=""
+            src="{{ url_for('static', filename='people.jpg') }}"
+          />
+
+        </div>
+      </section>
+      <section class="about-us-frame">
+        <div class="copyright-line">
+          <div class="about-us">About us</div>
+          <div class="f-a-qs-text">
+            <div class="faqs">FAQ’s</div>
+            <div class="f-a-qs-text-inner">
+              <div class="frame-group">
+                <div class="copyright-text-parent">
+                  <img
+                    class="copyright-text-icon"
+                    loading="lazy"
+                    alt=""
+                    src="{{ url_for('static', filename='people.jpg') }}"
+                  />
+
+                  <div class="copyright">Copyright</div>
+                </div>
+                <div class="email-link-wrapper">
+                  <div class="email-link"></div>
+                </div>
+                <div class="empatheticstoriesgmailcom">
+                  empatheticstories@gmail.com
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
