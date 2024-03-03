@@ -4,11 +4,12 @@ Welcome to City Connect – Your Ultimate College Companion!
 
 ## Team Name: index.html
 - Team Members:
-    Shreyanshi Shah
-    Trivedi Manya Jignasubhai
+    Shreyanshi Shah;
+    Trivedi Manya Jignasubhai;
     Menon Suraj Rajeev 
 
 - Contact Email: shreyanshishah07@gmail.com
+- youtube video demo link: https://youtu.be/lf9DtmDtGVs
 
 ## Project Overview 🚀
 
